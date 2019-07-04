@@ -12,7 +12,12 @@
     "url": "git://github.com/"
   },
   "dependencies": {
-    "serverless-optimizer-plugin": "^1.0.0"
+    "serverless-optimizer-plugin": "^1.0.0",
+    "snyk": "^1.189.0"
   },
-  "scripts": {}
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
